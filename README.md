@@ -23,7 +23,7 @@ echo -e "node_modules/  \ndist/ \nbuild/ \nnpm-debug.log" > .gitignore
 ```
 "scripts": {
     "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server --devtool eval --progress --colors --watch --hot --content-base app",
+    "start": "webpack-dev-server",
     "deploy": "NODE_ENV=production webpack --config webpack.production.config.js"
 },
 ```
@@ -45,7 +45,7 @@ module.exports = {
 }
 ```
 
-### links
+### links  
 
-[webpack-dev-server](https://github.com/webpack/webpack-dev-server)
-[browser-sync-webpack-plugin](https://www.npmjs.com/package/browser-sync-webpack-plugin)
+*   [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+*   [browser-sync-webpack-plugin](https://www.npmjs.com/package/browser-sync-webpack-plugin)
