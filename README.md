@@ -23,7 +23,7 @@ echo -e "node_modules/  \ndist/ \nbuild/ \nnpm-debug.log" > .gitignore
 ```
 "scripts": {
     "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --content-base dist/",
     "deploy": "NODE_ENV=production webpack --config webpack.production.config.js"
 },
 ```
